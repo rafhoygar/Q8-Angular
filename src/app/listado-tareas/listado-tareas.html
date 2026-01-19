@@ -1,0 +1,72 @@
+<div class="task-list-container">
+
+  <!-- Título y mensaje motivacional -->
+  <h2>Listado de Tareas</h2>
+  
+ <div class="tabla-tareas">
+    <h3>Tareas de hoy</h3>
+ </div>
+ <section class="top-section">
+  <app-calendario></app-calendario>
+ 
+
+ <!-- Tabla del día -->
+  <div class="tabla-dia">
+    <h3>Tareas de hoy</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tarea</th>
+          <th>Prioridad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tarea of tareasHoy">
+          <td>{{ tarea.title }}</td>
+          <td>
+            <span
+              class="prioridad"
+              [ngClass]="tarea.priority.toLowerCase()">
+              {{ tarea.priority }}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ </section>
+  
+
+
+  <p class="motivational">Hoy puede ser un gran día, trabaja con alegría y no dejes para mañana lo que puedas hacer hoy.</p>
+
+
+  <div class="task-columns">
+  
+  <!-- TO-DO Column -->
+  <div class="column to-do">
+    <h3>TO-DO</h3>
+    <app-task-card *ngFor="let tarea of tareasToDo" [tarea]="tarea"></app-task-card>
+  </div>
+
+  <!-- DOING Column -->
+  <div class="column doing">
+    <h3>DOING</h3>
+    <app-task-card *ngFor="let tarea of tareasDoing" [tarea]="tarea"></app-task-card>
+  </div>
+
+  <!-- DONE Column -->
+  <div class="column done">
+    <h3>DONE</h3>
+    <app-task-card *ngFor="let tarea of tareasDone" [tarea]="tarea"></app-task-card>
+  </div>
+
+</div>
+
+</div>
+
+
+
+  
+

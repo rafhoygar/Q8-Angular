@@ -1,0 +1,39 @@
+.calendar {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.calendar h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1976d2;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.weekdays span {
+  font-weight: bold;
+  color: #555;
+}
+
+.day {
+  padding: 8px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  cursor: default;
+}
+
+.day.marked {
+  background: #1976d2;
+  color: white;
+  font-weight: bold;
+}

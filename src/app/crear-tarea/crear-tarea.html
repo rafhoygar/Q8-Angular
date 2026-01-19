@@ -1,0 +1,40 @@
+<div class="form-container">
+  <h2>Crear nueva tarea</h2>
+
+  <form>
+    <label>Nombre de la tarea</label>
+    <input type="text">
+
+    <label>Fecha inicio</label>
+    <input type="date">
+
+    <label>Fecha fin</label>
+    <input type="date">
+
+    <label>Prioridad</label>
+    <div class="radio-group">
+      <label><input type="radio" name="prioridad" class="radio" id="alta"> 
+      <span></span> Alta</label>
+      <label><input type="radio" name="prioridad" class="radio" id="media">
+      <span></span> Media</label>
+      <label><input type="radio" name="prioridad" class="radio" id="baja">
+      <span></span>  Baja</label>
+    </div>
+
+    <label>Estado</label>
+    <select>
+      <option>TO-DO</option>
+      <option>DOING</option>
+      <option>DONE</option>
+    </select>
+
+    <label>Descripción</label>
+    <textarea></textarea>
+
+    <div class="buttons">
+      <button type="submit">Crear</button>
+      <button type="reset">Limpiar</button>
+    </div>
+  </form>
+</div>
+

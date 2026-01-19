@@ -1,0 +1,24 @@
+<div class="calendar">
+  <h3>Calendario</h3>
+
+  <div class="weekdays">
+    <span>L</span>
+    <span>M</span>
+    <span>X</span>
+    <span>J</span>
+    <span>V</span>
+    <span>S</span>
+    <span>D</span>
+  </div>
+
+  <div class="days">
+    <div
+      class="day"
+      *ngFor="let dia of dias"
+      [class.marked]="diasConTareas.includes(dia)"
+    >
+      {{ dia }}
+    </div>
+  </div>
+</div>
+

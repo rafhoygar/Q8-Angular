@@ -1,0 +1,137 @@
+.task-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.motivational {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.calendar-control {
+  margin-bottom: 30px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.top-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: stretch;
+}
+
+/* Tabla del día */
+.tabla-dia {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tabla-dia h3 {
+  margin-bottom: 15px;
+  color: #1976d2;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Prioridades */
+.prioridad {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.prioridad.alta {
+  background: #f44336;
+  color: white;
+}
+
+.prioridad.media {
+  background: #ff9800;
+  color: white;
+}
+
+.prioridad.baja {
+  background: #4caf50;
+  color: white;
+}
+
+/* Contenedor principal de las columnas */
+.task-columns {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.column {
+  flex: 1;
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+.task-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.motivational{
+    text-align: center;
+
+}
+.to-do {
+  border-top: 5px solid #f44336;  /* Rojo para TO-DO */
+}
+
+.doing {
+  border-top: 5px solid #ff9800;  /* Naranja para DOING */
+}
+
+.done {
+  border-top: 5px solid #4caf50;  /* Verde para DONE */
+}
+
+
